@@ -13,8 +13,8 @@ namespace Portfolio.Domain.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Column("skill_id")]
-        public int SkillId { get; set; }
+        [Column("id")]
+        public int Id { get; set; }
 
         [Required]
         [Column("skill_name")]

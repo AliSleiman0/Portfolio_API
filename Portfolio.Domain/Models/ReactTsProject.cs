@@ -26,12 +26,15 @@ namespace Portfolio.Domain.Models
         [Column("tech_used")]
         public string TechUsed { get; set; }
 
-        [Url]
+       
         [Column("github_url")]
-        public string GithubUrl { get; set; }
+        public string? GithubUrl { get; set; }
 
-        [Url]
         [Column("live_demo_url")]
-        public string LiveDemoUrl { get; set; }
+        public string? LiveDemoUrl { get; set; }
+
+
+        [Column("imgsrc")]
+        public string? ImgSrc { get; set; }
     }
 }

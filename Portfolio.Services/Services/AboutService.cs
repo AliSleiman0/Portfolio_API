@@ -1,34 +1,37 @@
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Portfolio.Domain.Models;
-using ClothingStore.Infrastructure.Context;  // Adjust this namespace if needed
+using Portfolio.Infrastructure.Repository;
+
 
 namespace Portfolio.Domain.Services
 {
     public class AboutService : IAboutService
     {
-        private readonly PortfolioDbContext _context;
+        private readonly IPortfolioRepository _repo;
 
-        public AboutService(PortfolioDbContext context)
+        public AboutService(IPortfolioRepository repo)
         {
-            _context = context;
+            _repo = repo;
         }
 
-        public async Task<About> GetAboutAsync()
+        public async Task<About> GetAboutAsync(int id)
         {
-            // If you expect only one About record, this returns the first one (or null)
-            return await _context.Abouts.FirstOrDefaultAsync();
+            
+            return await _repo.GetAll<About>().Where(abt => abt.Id == id).FirstOrDefaultAsync();
         }
 
         public async Task<bool> UpdateAboutAsync(About about)
         {
             // Try to find an existing About record by its primary key
-            var existingAbout = await _context.Abouts.FindAsync(about.Id);
+            var existingAbout = await _repo.GetAll<About>()
+                .Where(abt => abt.Id == about.Id)
+                .FirstOrDefaultAsync();
 
             if (existingAbout == null)
             {
                 // Record doesn't exist; add it as new
-                _context.Abouts.Add(about);
+                _repo.Add(about);
             }
             else
             {
@@ -40,8 +43,12 @@ namespace Portfolio.Domain.Services
             }
 
             // Save changes and return true if at least one record was modified/added
-            var result = await _context.SaveChangesAsync();
+            var result = await _repo.SaveChangesAsync();
             return result > 0;
+        }
+        public async Task<IEnumerable<About>> GetAllAboutAsync()
+        {
+            return await _repo.GetAll<About>().ToListAsync();
         }
     }
 }

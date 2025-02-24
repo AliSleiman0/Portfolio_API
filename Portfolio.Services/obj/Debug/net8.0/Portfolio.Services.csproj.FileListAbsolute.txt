@@ -11,6 +11,7 @@ D:\Portfolio_API\Portfolio.Services\obj\Debug\net8.0\Portfolio.Services.Generate
 D:\Portfolio_API\Portfolio.Services\obj\Debug\net8.0\Portfolio.Services.AssemblyInfoInputs.cache
 D:\Portfolio_API\Portfolio.Services\obj\Debug\net8.0\Portfolio.Services.AssemblyInfo.cs
 D:\Portfolio_API\Portfolio.Services\obj\Debug\net8.0\Portfolio.Services.csproj.CoreCompileInputs.cache
+D:\Portfolio_API\Portfolio.Services\obj\Debug\net8.0\Portfolio.Services.sourcelink.json
 D:\Portfolio_API\Portfolio.Services\obj\Debug\net8.0\Portfoli.9E6256F1.Up2Date
 D:\Portfolio_API\Portfolio.Services\obj\Debug\net8.0\Portfolio.Services.dll
 D:\Portfolio_API\Portfolio.Services\obj\Debug\net8.0\refint\Portfolio.Services.dll

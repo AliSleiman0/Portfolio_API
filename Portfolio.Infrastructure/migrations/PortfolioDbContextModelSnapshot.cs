@@ -73,6 +73,11 @@ namespace Portfolio.Infrastructure.Migrations
                         .HasColumnType("longtext")
                         .HasColumnName("github_url");
 
+                    b.Property<string>("ImgSrc")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("imgsrc");
+
                     b.Property<string>("LiveDemoUrl")
                         .IsRequired()
                         .HasColumnType("longtext")
@@ -111,6 +116,11 @@ namespace Portfolio.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("longtext")
                         .HasColumnName("github_url");
+
+                    b.Property<string>("ImgSrc")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("imgsrc");
 
                     b.Property<string>("LiveDemoUrl")
                         .IsRequired()
@@ -151,6 +161,11 @@ namespace Portfolio.Infrastructure.Migrations
                         .HasColumnType("longtext")
                         .HasColumnName("github_url");
 
+                    b.Property<string>("ImgSrc")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("imgsrc");
+
                     b.Property<string>("LiveDemoUrl")
                         .IsRequired()
                         .HasColumnType("longtext")
@@ -173,57 +188,57 @@ namespace Portfolio.Infrastructure.Migrations
 
             modelBuilder.Entity("Portfolio.Domain.Models.SkillsB", b =>
                 {
-                    b.Property<int>("SkillId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("skill_id");
+                        .HasColumnName("id");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("SkillId"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("SkillName")
                         .IsRequired()
                         .HasColumnType("longtext")
                         .HasColumnName("skill_name");
 
-                    b.HasKey("SkillId");
+                    b.HasKey("Id");
 
                     b.ToTable("skills_b");
                 });
 
             modelBuilder.Entity("Portfolio.Domain.Models.SkillsF", b =>
                 {
-                    b.Property<int>("SkillId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("skill_id");
+                        .HasColumnName("id");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("SkillId"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("SkillName")
                         .IsRequired()
                         .HasColumnType("longtext")
                         .HasColumnName("skill_name");
 
-                    b.HasKey("SkillId");
+                    b.HasKey("Id");
 
                     b.ToTable("skills_f");
                 });
 
             modelBuilder.Entity("Portfolio.Domain.Models.SkillsG", b =>
                 {
-                    b.Property<int>("SkillId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("skill_id");
+                        .HasColumnName("id");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("SkillId"));
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("SkillName")
                         .IsRequired()
                         .HasColumnType("longtext")
                         .HasColumnName("skill_name");
 
-                    b.HasKey("SkillId");
+                    b.HasKey("Id");
 
                     b.ToTable("skills_g");
                 });

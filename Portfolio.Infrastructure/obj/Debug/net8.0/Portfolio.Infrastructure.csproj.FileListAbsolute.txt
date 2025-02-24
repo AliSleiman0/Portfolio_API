@@ -9,6 +9,7 @@ D:\Portfolio_API\Portfolio.Infrastructure\obj\Debug\net8.0\Portfolio.Infrastruct
 D:\Portfolio_API\Portfolio.Infrastructure\obj\Debug\net8.0\Portfolio.Infrastructure.AssemblyInfoInputs.cache
 D:\Portfolio_API\Portfolio.Infrastructure\obj\Debug\net8.0\Portfolio.Infrastructure.AssemblyInfo.cs
 D:\Portfolio_API\Portfolio.Infrastructure\obj\Debug\net8.0\Portfolio.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Portfolio_API\Portfolio.Infrastructure\obj\Debug\net8.0\Portfolio.Infrastructure.sourcelink.json
 D:\Portfolio_API\Portfolio.Infrastructure\obj\Debug\net8.0\Portfoli.D1057275.Up2Date
 D:\Portfolio_API\Portfolio.Infrastructure\obj\Debug\net8.0\Portfolio.Infrastructure.dll
 D:\Portfolio_API\Portfolio.Infrastructure\obj\Debug\net8.0\refint\Portfolio.Infrastructure.dll

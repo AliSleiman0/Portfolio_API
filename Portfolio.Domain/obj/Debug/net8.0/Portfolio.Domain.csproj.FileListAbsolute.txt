@@ -7,6 +7,7 @@ D:\Portfolio_API\Portfolio.Domain\obj\Debug\net8.0\Portfolio.Domain.GeneratedMSB
 D:\Portfolio_API\Portfolio.Domain\obj\Debug\net8.0\Portfolio.Domain.AssemblyInfoInputs.cache
 D:\Portfolio_API\Portfolio.Domain\obj\Debug\net8.0\Portfolio.Domain.AssemblyInfo.cs
 D:\Portfolio_API\Portfolio.Domain\obj\Debug\net8.0\Portfolio.Domain.csproj.CoreCompileInputs.cache
+D:\Portfolio_API\Portfolio.Domain\obj\Debug\net8.0\Portfolio.Domain.sourcelink.json
 D:\Portfolio_API\Portfolio.Domain\obj\Debug\net8.0\Portfolio.Domain.dll
 D:\Portfolio_API\Portfolio.Domain\obj\Debug\net8.0\refint\Portfolio.Domain.dll
 D:\Portfolio_API\Portfolio.Domain\obj\Debug\net8.0\Portfolio.Domain.pdb
